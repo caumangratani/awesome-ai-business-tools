@@ -1,4 +1,4 @@
-# I Tested 40+ AI Repos So You Don't Have To. Here Are the 15 That Actually Work.
+# I Tested 60+ AI Repos So You Don't Have To. Here Are the 20 That Actually Work.
 
 > I'm a Chartered Accountant who stopped billing hours and started deploying AI agents. In the last 90 days, I've cloned 40+ repos, installed 200+ skills, and tested every "game-changing" AI tool that crossed my feed. Most are garbage. Recycled prompts dressed up as "skills." Toy demos that break on real data. README hype with no substance.
 >
@@ -236,6 +236,88 @@ cp ai-marketing-skills/growth-engine/SKILL.md ~/.claude/skills/growth-engine/SKI
 
 ---
 
+### APRIL 2026 ADDITIONS (Newly Tested)
+
+<details>
+<summary><strong>16. Postiz</strong> — Open-source social scheduler replacing Buffer/Hootsuite | <code>INSTALL</code></summary>
+
+**Repo:** [gitroomhq/postiz-app](https://github.com/gitroomhq/postiz-app)
+
+**What it does:** Open-source social media command center for 25+ platforms — X, Instagram, LinkedIn, TikTok, YouTube, Reddit, Facebook, Threads, Pinterest, Bluesky, Mastodon, Discord, Slack, Telegram. AI post generation + Canva-like editor + analytics + team collaboration + public API.
+
+**Why it's install-worthy:**
+- Buffer charges $6/channel/mo, Hootsuite $199/mo, Sprout Social $249/mo
+- Postiz replaces all of them, self-hosted, free
+- For agencies: productize it as a client add-on at ₹15K/mo (near 100% margin)
+
+**Best for:** Content creators. Agencies managing multiple client brands. Anyone posting to 3+ platforms.
+
+**Discovered via:** [@heynavtoor tweet](https://x.com/heynavtoor/status/2043966500512616510)
+
+</details>
+
+<details>
+<summary><strong>17. Rowboat</strong> — Open-source Claude Cowork alternative | <code>REFERENCE</code></summary>
+
+**Repo:** [rowboatlabs/rowboat](https://github.com/rowboatlabs/rowboat)
+
+**What it does:** Local-first desktop app that connects to your email + meeting tools, automatically builds a living knowledge graph of your work. Voice-enabled, works with any LLM, MCP extensibility, Obsidian-compatible vault (plain markdown), background agents, web search, Apache 2.0 license.
+
+**Why it matters:** Direct validation that the LLM-wiki pattern (Karpathy's April 2026 gist) is becoming a real product category. The market is moving toward local-first, markdown-native, knowledge-compounding AI — exactly the architecture we've been building. Monitor for features to steal. Indian compliance angle (ICAI, DPDP Act) is a goldmine.
+
+**Best for:** Studying the pattern. Not directly for MSME clients yet (too early, requires Docker).
+
+**Discovered via:** [@akshay_pachaar tweet — 185K views](https://x.com/akshay_pachaar/status/2041856590341677378)
+
+</details>
+
+<details>
+<summary><strong>18. Open-Higgsfield-AI</strong> — Open-source AI image & video cinema studio | <code>REFERENCE</code></summary>
+
+**Repo:** [Anil-matcha/Open-Higgsfield-AI](https://github.com/Anil-matcha/Open-Higgsfield-AI)
+
+**What it does:** 200+ models (Flux, SDXL, Midjourney, Ideogram, Kling, Sora, Veo) in one self-hosted UI. Image Studio, Video Studio, Cinema Studio (pro camera controls), Lip Sync Studio. Desktop app for macOS + Windows. MIT licensed. 4.2k stars, 760 forks.
+
+**Why it's a reference:** If you ever need AI-generated visuals for content (reels, thumbnails, ads, workshop materials), this replaces paid subscriptions. Not core to business automation — but essential for content-heavy use cases.
+
+**Best for:** Content creators needing visuals. Video production. Marketing teams.
+
+**Discovered via:** [@ihtesham2005 tweet](https://x.com/ihtesham2005/status/2041546716806357435)
+
+</details>
+
+<details>
+<summary><strong>19. Open-Higgsfield Alternative (Magika)</strong> — Google's open-source file detection AI | <code>REFERENCE</code></summary>
+
+**Repo:** [google/magika](https://github.com/google/magika)
+
+**What it does:** AI-powered file content type detection. Trained on 100M files, 200+ content types, 99% accuracy, 5ms per file. `pip install magika`. Google ran this internally for years (Gmail, Drive, Safe Browsing) before open-sourcing it.
+
+**Why it's a reference:** Critical safety layer for any AI agent that processes client files. Rename malware to "invoice.pdf"? Magika sees through it. If you deploy BizClaw-style agents for CA firms or finance teams, this should sit at the infrastructure layer — not in the agent's memory (which compacts).
+
+**Best for:** Anyone building production AI agents that handle client files. Security engineering for agent systems.
+
+**Discovered via:** [@_vmlops tweet — 410K views](https://x.com/_vmlops/status/2043624154646409708)
+
+</details>
+
+<details>
+<summary><strong>20. Karpathy CLAUDE.md Template</strong> — 15K stars behavioral rules file | <code>ESSENTIAL</code></summary>
+
+**Repo:** Search GitHub for "claude-md karpathy" (originated from Karpathy's coding rules observations)
+
+**What it does:** A single CLAUDE.md file dropped into your repo that gives Claude Code a structured set of behavioral guidelines. Prevents the 3 predictable LLM mistakes: over-engineering, ignoring existing patterns, adding unasked-for dependencies.
+
+**Why it's essential:** "Developers are moving past 'use AI to write code' and into 'engineer the AI's behavior so the code is actually good.'" This is the tight harness pattern applied to code. If you use Claude Code daily, this single file can save you hours.
+
+**Best for:** Every Claude Code user. Put this in every repo.
+
+**Discovered via:** [@akshay_pachaar tweet](https://x.com/akshay_pachaar/status/2043374229199151351)
+
+</details>
+
+---
+
 ### Honorable Mentions (Worth Knowing About)
 
 | Repo | What | Why |
@@ -292,10 +374,17 @@ The order matters. Skills first (how AI thinks), then agents (who AI becomes), t
 
 I'll update this monthly as I test new repos. Star this repo to stay updated.
 
-**Last updated:** March 2026
-**Repos tested:** 40+
+**Last updated:** April 2026
+**Repos tested:** 60+
 **Skills installed:** 200+
 **Businesses running on this stack:** 4
+
+### Recent Additions (April 2026)
+- Postiz — social scheduler ([@heynavtoor](https://x.com/heynavtoor/status/2043966500512616510))
+- Rowboat — Claude Cowork alternative ([@akshay_pachaar](https://x.com/akshay_pachaar/status/2041856590341677378))
+- Open-Higgsfield-AI — image/video studio ([@ihtesham2005](https://x.com/ihtesham2005/status/2041546716806357435))
+- Google Magika — file detection AI ([@_vmlops](https://x.com/_vmlops/status/2043624154646409708))
+- Karpathy CLAUDE.md template ([@akshay_pachaar](https://x.com/akshay_pachaar/status/2043374229199151351))
 
 ---
 
