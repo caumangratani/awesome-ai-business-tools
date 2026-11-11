@@ -8,6 +8,45 @@
 
 ---
 
+## The Top 20 Right Now (November 2026)
+
+> **Reality check.** In November I scanned every Claude Code session I have run on this machine: 355 sessions. I had 602 skills and 126 agents installed. **36 skills were ever invoked. Named agents ran 8 times; the general-purpose agent ran 344 times.** A handful of tools did almost all the work.
+>
+> So I reorganised. About 110 skills stay active. The other 490 sit in on-demand packs that one small router skill can find. Nothing was deleted, and every session is lighter. If you have installed everything on every "awesome" list, including this one, measure before you add more.
+
+Ranked by what I really used and by fit with my work: business automation builds, proposals, video and content.
+
+| # | Repo | What I use it for |
+|---|------|-------------------|
+| 1 | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | Every code-built video. My most-used skill family by far |
+| 2 | [anthropics/skills](https://github.com/anthropics/skills) | Word, PDF, PowerPoint, Excel, skill-creator, frontend-design |
+| 3 | [supabase/agent-skills](https://github.com/supabase/agent-skills) | Database, auth and row-level security on every client build |
+| 4 | Vercel plugin (official plugin directory) | Next.js, AI SDK, deployments |
+| 5 | [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | Security review before go-live |
+| 6 | [gitleaks/gitleaks](https://github.com/gitleaks/gitleaks) | Secrets scan before every handover |
+| 7 | [firecrawl/anydoc](https://github.com/firecrawl/anydoc) | Client Excel, Word and PowerPoint into text an AI can read |
+| 8 | [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | Workflow and architecture diagrams in proposals |
+| 9 | [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | Styles, palettes and font pairings |
+| 10 | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | Interfaces that do not look AI-generated |
+| 11 | [emilkowalski/skills](https://github.com/emilkowalski/skills) | Motion and interface craft |
+| 12 | [JCodesMore/ai-website-cloner-template](https://github.com/JCodesMore/ai-website-cloner-template) | Rebuild a client's old site in Next.js |
+| 13 | [greensock/gsap-skills](https://github.com/greensock/gsap-skills) | Animation under HyperFrames and on landing pages |
+| 14 | [JuneYaooo/rea-video](https://github.com/JuneYaooo/rea-video) | Break down a reference reel before scripting |
+| 15 | [morluto/rea](https://github.com/morluto/rea) | Reverse-engineer a running app when there is no source |
+| 16 | [walkinglabs/learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | Make a repo reliable for coding agents |
+| 17 | [obra/superpowers](https://github.com/obra/superpowers) | Brainstorming, debugging and verification discipline |
+| 18 | [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) | My knowledge vault |
+| 19 | [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo) | SEO and local search for client retainers |
+| 20 | [anthropics/single-agent-loop-kit](https://github.com/anthropics/single-agent-loop-kit) | The method behind the clean-up: fewer agents, more skills, measured |
+
+**Read, do not install:** [anthropics/commerce-agents](https://github.com/anthropics/commerce-agents) (draft, then approve) · [anthropics/claude-cookbooks](https://github.com/anthropics/claude-cookbooks) (knowledge-graph recipe) · [trycompai/crm](https://github.com/trycompai/crm) (evidence bands on facts) · [typesafe-ai/skills](https://github.com/typesafe-ai/skills) (truth-table design for AI decisions) · [anthropics/cwc-long-running-agents](https://github.com/anthropics/cwc-long-running-agents) (default-FAIL gate).
+
+**The one that compounds most is not on GitHub's trending page:** your own patterns repo. Every time a feature survives a real client demo, save it as a pattern. Every new build starts by reading that folder.
+
+The longer list below is the full record, with the original ratings.
+
+---
+
 ## How This List Works
 
 Every repo is rated on 3 criteria:
@@ -36,6 +75,8 @@ Every repo is rated on 3 criteria:
 **Why it's essential:** I run a 7-agent Bizgenix team (CTO, Backend Architect, Frontend Dev, AI Engineer, CMO, Product Manager, QA Lead) with org hierarchy and budgets. These agents don't just answer questions — they have opinions, they push back, they catch mistakes. The "Reality Checker" agent alone has saved me from shipping broken code 4 times.
 
 **Best for:** Anyone managing AI workflows. Developers. Agency owners.
+
+**November 2026 update:** After measuring 355 sessions, I kept 14 of these agents and archived the rest. A general-purpose agent with a clear brief did the work 344 times; named agents ran 8 times. Pick the few you will brief often.
 
 **Install:**
 ```bash
@@ -579,8 +620,8 @@ I tested 25+ more repos that didn't make this list. Common reasons:
 
 For context, here's what I actually run:
 
-- **600+ skills** installed (from the repos above + custom-built), curated down twice
-- **111 AI agents** (from agency-agents)
+- **About 110 skills active**, 490 more in on-demand packs (600+ installed, cut on usage evidence in November 2026)
+- **14 AI agents** kept from agency-agents (102 archived)
 - **4 businesses** managed through this setup
 - **7-agent team** with org hierarchy and budgets
 - **Daily workflows:** Email triage, content creation, client management, code reviews, financial analysis
