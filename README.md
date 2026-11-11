@@ -1,4 +1,4 @@
-# I Tested 60+ AI Repos So You Don't Have To. Here Are the 20 That Actually Work.
+# I Reviewed 190+ AI Repos So You Don't Have To. Here Are the 32 That Actually Work.
 
 > I'm a Chartered Accountant who stopped billing hours and started deploying AI agents. In the last 90 days, I've cloned 40+ repos, installed 200+ skills, and tested every "game-changing" AI tool that crossed my feed. Most are garbage. Recycled prompts dressed up as "skills." Toy demos that break on real data. README hype with no substance.
 >
@@ -318,6 +318,230 @@ cp ai-marketing-skills/growth-engine/SKILL.md ~/.claude/skills/growth-engine/SKI
 
 ---
 
+### NOVEMBER 2026 ADDITIONS (Newly Installed)
+
+> In November I went through 205 saved X posts and about 130 linked repos. Every repo was checked on GitHub (stars, licence, last push), the skill files were read line by line before anything was copied, and the ones rated INSTALL or ESSENTIAL below were installed on my own machine. Each card says what was actually tested.
+
+<details>
+<summary><strong>21. HyperFrames</strong> — Video built in HTML, rendered to MP4 | <code>ESSENTIAL</code></summary>
+
+**Repo:** [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes)
+
+**What it does:** You write a video as HTML and GSAP animation. It renders to MP4 at any size. It ships Claude Code skills for composing, captions, audio and launch videos.
+
+**Why it's essential:** This is now my default engine for product videos, feature tours and reels. One source renders both 16:9 and 9:16. No editor, no timeline, and every change is a text edit. Apache-2.0.
+
+**Tested:** In daily use since October 2026 for product launch and company videos.
+
+**Watch out:** Telemetry is on by default. Switch it off in its config file.
+
+**Best for:** Founders and agencies who ship product videos often.
+
+</details>
+
+<details>
+<summary><strong>22. gitleaks</strong> — Find leaked keys before a client does | <code>ESSENTIAL</code></summary>
+
+**Repo:** [gitleaks/gitleaks](https://github.com/gitleaks/gitleaks)
+
+**What it does:** Scans git history and folders for API keys, tokens and passwords.
+
+**Why it's essential:** AI-written code leaks keys into commits more often than people admit. One command before every handover removes the most embarrassing failure in client work.
+
+**Tested:** Ran it on a live client project. Git history was clean. The only hits were in local environment files that git already ignores.
+
+**Install:**
+```bash
+brew install gitleaks
+gitleaks detect --no-banner --redact
+```
+
+**Best for:** Anyone who hands code to a client or makes a repo public.
+
+**Discovered via:** [@mdjunaidap](https://x.com/mdjunaidap/status/2119422187408851116)
+
+</details>
+
+<details>
+<summary><strong>23. anydoc</strong> — Word, Excel, PowerPoint and PDF to Markdown | <code>INSTALL</code></summary>
+
+**Repo:** [firecrawl/anydoc](https://github.com/firecrawl/anydoc)
+
+**What it does:** One local command turns office files into clean Markdown that an AI can read. It ships a Claude skill.
+
+**Why it's install-worthy:** Business owners send Excel sheets and Word files, not APIs. This is the fastest path from a client's file to something Claude can work with. MIT.
+
+**Tested:** A 14-page Word document converted cleanly in 8 seconds. A designed multi-column PDF came out as messy tables, so use the source Word or PowerPoint file when you have it.
+
+**Watch out:** The `--ocr hosted` option uploads the whole document. Keep it off for client files.
+
+**Best for:** Consultants, CAs and anyone who receives documents from clients.
+
+**Discovered via:** [@firecrawl](https://x.com/firecrawl/status/2084670366803218774)
+
+</details>
+
+<details>
+<summary><strong>24. Cloudflare security-audit skill</strong> — A security review that checks its own findings | <code>INSTALL</code></summary>
+
+**Repo:** [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill)
+
+**What it does:** A source-first security review for any codebase. Each finding is re-checked by a fresh agent, so you get fewer false alarms. It has a short guidance mode and a full audit mode.
+
+**Why it's install-worthy:** It refuses to run target code without a sandbox, and it reports what it could not verify. That honesty is rare. MIT, about 70K stars.
+
+**Tested:** Read in full and scripts scanned (no network calls). First full audit on a production app is next.
+
+**Best for:** Small teams shipping AI-written apps without a security person.
+
+**Discovered via:** [@RoundtableSpace](https://x.com/RoundtableSpace/status/2112397145412091969)
+
+</details>
+
+<details>
+<summary><strong>25. diagram-design</strong> — 45 diagram types in your brand colours | <code>INSTALL</code></summary>
+
+**Repo:** [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design)
+
+**What it does:** Flowcharts, swimlanes, architecture, org charts, funnels, timelines and more as clean HTML, SVG or PNG. It imports draw.io, Mermaid and Excalidraw files and asks for your brand colours once.
+
+**Why it's install-worthy:** Proposals and workbooks need diagrams, and default AI diagrams look generic. This one has a design system and a "delete until nothing can be removed" rule. MIT, no telemetry.
+
+**Best for:** Proposals, training workbooks, pitch decks.
+
+**Discovered via:** [@RoundtableSpace](https://x.com/RoundtableSpace/status/2108992207999128036)
+
+</details>
+
+<details>
+<summary><strong>26. rea-video</strong> — How was this reel made? | <code>INSTALL</code></summary>
+
+**Repo:** [JuneYaooo/rea-video](https://github.com/JuneYaooo/rea-video)
+
+**What it does:** Breaks a reference video down shot by shot: live action, AI video or code render; captions and overlays; voice, music tempo and sound effects; edit rhythm. Then it writes a remake plan.
+
+**Why it's install-worthy:** Studying what works is half of content. This replaces an hour of frame-stepping. Runs locally. Apache-2.0.
+
+**Tested:** On a 59-second reel of my own it found 10 shots, correctly called the whole video a code render, and separated voice from music at 84.7 BPM. It took 4 minutes with no vision model.
+
+**Watch out:** Use it to study structure and pacing. Do not copy another brand's footage or music. The skill file is in Chinese; pass `--lang en`.
+
+**Best for:** Content teams and anyone scripting reels.
+
+**Discovered via:** [@rileybrown](https://x.com/rileybrown/status/2119935865933725888)
+
+</details>
+
+<details>
+<summary><strong>27. reanimate</strong> — Clone a web animation and prove the match | <code>INSTALL</code></summary>
+
+**Repo:** [NiazMorshed2007/reanimate](https://github.com/NiazMorshed2007/reanimate)
+
+**What it does:** Captures a reference animation from a URL or video, writes a motion spec (timing, easing, stagger), rebuilds it in your code, then compares the two frame by frame until they match.
+
+**Why it's install-worthy:** "Make it move like that site" is the hardest brief to hand to an AI. This measures the motion, so the result does not depend on guesswork. MIT.
+
+**Tested:** Setup completed (Bun, Chromium, ffmpeg). First real clone is next.
+
+**Watch out:** Very new repo. Match motion, not another brand's assets.
+
+**Best for:** Agencies building landing pages.
+
+**Discovered via:** [@dr_cintas](https://x.com/dr_cintas/status/2119555538144911525)
+
+</details>
+
+<details>
+<summary><strong>28. single-agent-loop-kit</strong> — Fewer subagents, more skills | <code>INSTALL</code></summary>
+
+**Repo:** [anthropics/single-agent-loop-kit](https://github.com/anthropics/single-agent-loop-kit)
+
+**What it does:** Anthropic's own kit for moving a multi-agent setup toward one agent that loads skills and tools on demand. Every change is measured against the same test before and after.
+
+**Why it's install-worthy:** Most of us built too many agents in 2025. Anthropic's testing says one agent with good skills often does better. This gives you the method to check that on your own setup. Apache-2.0.
+
+**Best for:** Anyone with more than five subagents.
+
+**Discovered via:** [@cherry_mx_reds](https://x.com/cherry_mx_reds/status/2113969070118666670)
+
+</details>
+
+<details>
+<summary><strong>29. harness-creator</strong> — Make a repo easy for an AI agent to work in | <code>INSTALL</code></summary>
+
+**Repo:** [walkinglabs/learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering)
+
+**What it does:** A course on harness engineering plus a skill that creates and audits the five things an agent needs in a repo: instructions, state, verification, scope and session handoff.
+
+**Why it's install-worthy:** When an agent forgets context or says "done" too early, the fix is usually in the repo, not the model. MIT, about 24K stars.
+
+**Best for:** Teams running long builds with Claude Code or Codex.
+
+**Discovered via:** [@liangzhu_AI](https://x.com/liangzhu_AI/status/2114325601326649846)
+
+</details>
+
+<details>
+<summary><strong>30. social-media-skills</strong> — Score a post against your own history | <code>INSTALL</code></summary>
+
+**Repo:** [charlie947/social-media-skills](https://github.com/charlie947/social-media-skills)
+
+**What it does:** Seventeen skills for LinkedIn and video content. I installed three: a post scorer that compares a draft with your own best posts, an analytics dashboard from the LinkedIn export, and a weekly niche research brief with dated sources.
+
+**Why it's install-worthy:** It separates "scored against real data" from "editorial opinion only" and says which one you got. MIT.
+
+**Best for:** Founders who post on LinkedIn every week.
+
+**Discovered via:** [@tom_doerr](https://x.com/tom_doerr/status/2109075011923329337)
+
+</details>
+
+<details>
+<summary><strong>31. TypeSafe skills</strong> — Small judgments from the model, decisions in code | <code>INSTALL</code></summary>
+
+**Repo:** [typesafe-ai/skills](https://github.com/typesafe-ai/skills)
+
+**What it does:** One guidance file for building with decision models such as Jev: models that answer typed questions (pick one, yes or no, a score) with a probability, fast and cheap.
+
+**Why it's install-worthy:** The design rule inside is useful with any model. Write each business decision as a truth table. The model answers the small questions. Your code holds the rule and the threshold. The model never writes a price or a total. MIT.
+
+**Best for:** Anyone building scoring, routing or classification into a product.
+
+**Discovered via:** [@DeRonin_](https://x.com/DeRonin_/status/2100917158922387537)
+
+</details>
+
+<details>
+<summary><strong>32. Anthropic commerce-agents</strong> — The best public example of "draft, then approve" | <code>REFERENCE</code></summary>
+
+**Repo:** [anthropics/commerce-agents](https://github.com/anthropics/commerce-agents)
+
+**What it does:** A blueprint for shopping and merchant agents. The merchant agent stages every change and waits for a person to approve it.
+
+**Why it's a reference:** If your agent will ever send, pay, order or delete, copy this write path: the agent drafts, a person commits. Apache-2.0.
+
+**Best for:** Anyone designing an agent that acts on business data.
+
+**Discovered via:** [@ClaudeDevs](https://x.com/ClaudeDevs/status/2095233745167282602)
+
+</details>
+
+#### Also added since April (design, motion, knowledge)
+
+| Repo | What | Rating |
+|------|------|--------|
+| [emilkowalski/skills](https://github.com/emilkowalski/skills) | Motion and interface craft skills | INSTALL |
+| [jakubkrehel/skills](https://github.com/jakubkrehel/skills) | Better UI surfaces, typography and colour | INSTALL |
+| [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | Design taste, minimal UI, redesign of existing projects | INSTALL |
+| [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | Searchable styles, palettes and font pairings | INSTALL |
+| [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) | Obsidian markdown, CLI, bases and canvas | INSTALL |
+| [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo) | v2.6 adds maps, backlinks, clusters and Google API skills (see #9) | INSTALL |
+| [anthropics/claude-cookbooks](https://github.com/anthropics/claude-cookbooks) | The knowledge-graph recipe: extract, resolve, assemble, query | REFERENCE |
+| [anthropics/cwc-long-running-agents](https://github.com/anthropics/cwc-long-running-agents) | Default-FAIL gate and a fresh-context evaluator for long builds | REFERENCE |
+| [trycompai/crm](https://github.com/trycompai/crm) | Evidence bands on facts and an agent task queue | REFERENCE |
+
+---
+
 ### Honorable Mentions (Worth Knowing About)
 
 | Repo | What | Why |
@@ -340,13 +564,22 @@ I tested 25+ more repos that didn't make this list. Common reasons:
 - **Abandoned** — Last commit 6+ months ago, issues ignored
 - **Duplicates** — Same concept, worse execution than something already on this list
 
+**New in November 2026 — skipped on safety grounds.** These patterns are now common enough to name:
+
+- **It sends your whole session somewhere** — "context compaction" and "agent memory" plugins that forward every prompt and tool result to a third-party API. Client names and keys go with it.
+- **Pooled free API keys** — routers that stack the free tiers of many providers. They break provider terms and your prompts go wherever is free today.
+- **Hosted bots that hold your logins** — one connected Gmail or CRM is open to every bot on the account, with no audit log and no dry run.
+- **Installers piped from the web into the shell** — two repos this month also carried text written to make an AI agent install them. Read before you run.
+- **Scraped contact lists and "get past bot protection" scrapers** — a legal and reputation risk, not a growth hack.
+- **Famous-name hype** — a "leaked file" that never leaked, lectures credited to people who did not give them, star counts wrong in both directions. Check the repo, not the post.
+
 ---
 
 ## My Setup
 
 For context, here's what I actually run:
 
-- **200+ skills** installed (from the repos above + custom-built)
+- **600+ skills** installed (from the repos above + custom-built), curated down twice
 - **111 AI agents** (from agency-agents)
 - **4 businesses** managed through this setup
 - **7-agent team** with org hierarchy and budgets
@@ -374,10 +607,24 @@ The order matters. Skills first (how AI thinks), then agents (who AI becomes), t
 
 I'll update this monthly as I test new repos. Star this repo to stay updated.
 
-**Last updated:** April 2026
-**Repos tested:** 60+
-**Skills installed:** 200+
+**Last updated:** November 2026
+**Repos reviewed:** 190+ (every one checked on GitHub; the INSTALL and ESSENTIAL ones installed on my machine)
+**Skills installed:** 600+
 **Businesses running on this stack:** 4
+
+### Recent Additions (November 2026)
+- HyperFrames — video built in HTML
+- gitleaks — secrets scan before every handover ([@mdjunaidap](https://x.com/mdjunaidap/status/2119422187408851116))
+- anydoc — office files to Markdown ([@firecrawl](https://x.com/firecrawl/status/2084670366803218774))
+- Cloudflare security-audit skill ([@RoundtableSpace](https://x.com/RoundtableSpace/status/2112397145412091969))
+- diagram-design — 45 branded diagram types ([@RoundtableSpace](https://x.com/RoundtableSpace/status/2108992207999128036))
+- rea-video — reel teardown ([@rileybrown](https://x.com/rileybrown/status/2119935865933725888))
+- reanimate — measured animation cloning ([@dr_cintas](https://x.com/dr_cintas/status/2119555538144911525))
+- single-agent-loop-kit — fewer subagents ([@cherry_mx_reds](https://x.com/cherry_mx_reds/status/2113969070118666670))
+- harness-creator ([@liangzhu_AI](https://x.com/liangzhu_AI/status/2114325601326649846))
+- social-media-skills ([@tom_doerr](https://x.com/tom_doerr/status/2109075011923329337))
+- TypeSafe skills ([@DeRonin_](https://x.com/DeRonin_/status/2100917158922387537))
+- Anthropic commerce-agents ([@ClaudeDevs](https://x.com/ClaudeDevs/status/2095233745167282602))
 
 ### Recent Additions (April 2026)
 - Postiz — social scheduler ([@heynavtoor](https://x.com/heynavtoor/status/2043966500512616510))
