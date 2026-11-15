@@ -592,6 +592,7 @@ gitleaks detect --no-banner --redact
 | [awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases) | OpenClaw use case gallery | Inspiration for what to build with AI employees |
 | [hyperbrowser-app-examples](https://github.com/hyperbrowserai/hyperbrowser-app-examples) | Browser automation examples | If you need AI to control a browser |
 | [MoneyPrinterV2](https://github.com/FujiwaraChoki/MoneyPrinterV2) | Automated short video creation | Fun experiment, not production-grade |
+| [No Stairs Please MCP](https://nostairsplease.com/mcp) | Hosted MCP server for live-music venue discovery and tour routing | Real booking contacts & capacity data for AI agents |
 
 ---
 
