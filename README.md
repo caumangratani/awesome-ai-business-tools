@@ -680,13 +680,13 @@ I'll update this monthly as I test new repos. Star this repo to stay updated.
 
 I'm **Dr. CA Umang Ratani** — a Chartered Accountant who traded billable hours for AI agents. I run 4 businesses from Ahmedabad, India, and most of my daily operations are handled by AI.
 
-- Building: [Bizgenix AI Solutions](https://bizgenix.in) — AI employee systems for Indian businesses
-- Teaching: Scale With AI workshops for business owners
+- Building: [Bizgenix AI Solutions](https://bizgenix.ai) — AI consulting, custom AI solutions and ready AI products for Indian businesses
+- Teaching: [Scale With AI workshops and corporate AI training](https://bizgenix.ai/courses) for business owners and teams
 - Managing: Virtual CEO Program (200+ companies)
 
 This list comes from real usage, not research. Every repo here runs in my actual business stack.
 
-**Connect:** [@umangratani](https://x.com/umangratani) on X
+**Connect:** [@umangratani](https://x.com/umangratani) on X · [LinkedIn](https://www.linkedin.com/in/umangratani/) · [bizgenix.ai](https://bizgenix.ai)
 
 ---
 
